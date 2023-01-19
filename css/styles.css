@@ -315,7 +315,7 @@ header {
   }
 }
 
-/* .hero-btn {
+.hero-btn {
   display: inline-block;
   font-family: inherit;
   font-weight: 600;
@@ -337,7 +337,7 @@ header {
   transition-property: background-color, box-shadow;
   transition-duration: var(--trans-duration);
   transition-timing-function: var(--trans-tf);
-} */
+}
 
 .hero-btn:hover,
 .hero-btn:focus,
