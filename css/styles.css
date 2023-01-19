@@ -1,9 +1,9 @@
-/* цвет фона и героя #2E2F42
-вторичный цвет фона #F4F4FD
-цвет кнопки и веб ##4D5AE5
+/* колір фону і футеру#2E2F42
+вторинний колір фону  #F4F4FD
+колір кнопки і веб ##4D5AE5
 заголовки #2E2F42
-цвет текста #434455
-цвет текста футер #E7E9FC */
+колір тексту #434455
+колір тексту футеру #E7E9FC */
 
 :root {
   --primary-color: #2e2f42;
@@ -383,9 +383,11 @@ header {
     margin-top: 48px;
   }
 }
+
 /*  */
 /* benefits section */
 /*  */
+
 @media screen and (max-width: 1199px) {
   .benefits-item {
     display: none;
@@ -889,6 +891,7 @@ footer .logo {
     text-align: left;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     padding-top: 100px;
