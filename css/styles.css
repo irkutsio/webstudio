@@ -72,6 +72,7 @@ img {
   padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -1336,7 +1337,13 @@ footer .logo {
 /*  */
 
 .projects {
-  padding-top: 98px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.projects-nav-container {
+  min-width: 295px;
+  margin-bottom: 48px;
 }
 
 .filter-btn {
@@ -1372,36 +1379,31 @@ footer .logo {
   background-color: var(--current-link-color);
 }
 
-.prodjects-item:not(:last-child) {
-  margin-right: 24px;
-}
-
 .projects-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
+}
 
-  margin-bottom: 72px;
+.project-header,
+.project-section-desc {
+  color: var(--primary-color);
+}
+
+.project-header {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
 }
 
 .prodjects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -24px;
-  margin-top: -48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-descr {
-  display: block;
-
-  padding: 32px 0 32px 16px;
-  width: 360px;
-}
-
-.prodjects-list li {
-  flex-basis: calc(100% / 3 - 24px);
-
-  margin-left: 24px;
-  margin-top: 48px;
+.projects-list li:not(:last-child) {
+  margin-bottom: 48px;
 }
 
 .project-card {
@@ -1417,6 +1419,61 @@ footer .logo {
 .project-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.project-descr {
+  display: block;
+  padding: 32px 0 32px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .projects-nav {
+    justify-content: center;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+
+  .projects-list li {
+    width: 356px;
+  }
+
+  .projects-list li:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+  .project-descr {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .projects-nav-container {
+    margin-bottom: 72px;
+  }
+
+  .projects-list {
+    justify-content: center;
+  }
+
+  .projects-list li:nth-child(-n + 6) {
+    margin-bottom: 48px;
+  }
+  .projects-list li:nth-child(n + 6) {
+    margin-bottom: 0;
+  }
 }
 
 .overlay-text {
@@ -1447,4 +1504,10 @@ footer .logo {
 .project-card:hover .overlay,
 .project-card:focus .overlay {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1199px) {
+  .overlay {
+    display: none;
+  }
 }
