@@ -191,6 +191,7 @@ header {
   }
   .nav-item:active {
     color: var(--active-color);
+    /* color: red; */
   }
   .nav-item::after {
     display: block;
