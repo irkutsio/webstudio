@@ -189,11 +189,8 @@ header {
   .nav-item:focus {
     color: var(--active-color);
   }
-  .nav-item:active {
-    color: var(--active-color);
-    /* color: red; */
-  }
-  .nav-item::after {
+
+  .nav-item:after {
     display: block;
     position: absolute;
     opacity: 0;
@@ -206,13 +203,14 @@ header {
     background: var(--current-link-color);
     border-radius: 2px;
   }
+  
   .link.current {
     color: var(--current-link-color);
-  }
+ } 
 
-  .link.current::after {
+  .link.current:after {
     opacity: 1;
-  }
+  } 
   .auth-nav {
     color: var(--text-color);
     font-size: 16px;
